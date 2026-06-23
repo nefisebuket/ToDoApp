@@ -1,5 +1,6 @@
 .form-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -8,7 +9,11 @@
 .form-box {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f6f2ff;
 }
 .form-box input {
   width: 300px;
@@ -19,13 +24,13 @@
 
 .button-group button {
   width: 100px;
-
+  background-color: #e9d9ff;
   font-size: 16px;
   border-radius: 5px;
 }
 .button-group {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   width: auto;
 }

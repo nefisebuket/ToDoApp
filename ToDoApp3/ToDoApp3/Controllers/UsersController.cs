@@ -78,9 +78,27 @@ namespace ToDoApp3.Controllers
         
         
         }
-        
-        
-        
+        [HttpDelete("{email}")]
+        public async Task<IActionResult> DeleteUser(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+                return NotFound("Kullanıcı bulunamadı");
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+
+            if (result.Succeeded)
+            {
+                return Ok("Kullanıcı silindi");
+            }
+
+            return BadRequest(result.Errors);
+        }
+
+
         private object GenerateJWT (AppUser user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();

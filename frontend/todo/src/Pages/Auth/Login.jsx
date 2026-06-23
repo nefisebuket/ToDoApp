@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "../../services/Services";
-
 import "./auth.css";
 
 function Login() {
@@ -28,6 +27,7 @@ function Login() {
 
   return (
     <div className="form-container">
+      <h1 style={{ color: "#4B3B61" }}>Get It Done</h1>
       <div className="form-box">
         <input
           type="text"

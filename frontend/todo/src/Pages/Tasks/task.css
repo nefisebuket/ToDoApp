@@ -6,50 +6,26 @@ body {
 }
 
 .task-container {
-  max-width: 1000px;
-  margin-left: 50px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background-color: #67a2e4;
+  padding: 50px;
+  border-radius: 6px;
+  background-color: #e9d9ff;
+  position: relative;
 }
 
 .task-form {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
   background: #fff;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.task-form input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  outline: none;
-}
-
-.task-form input[type="text"]:focus {
-  border-color: #4a90e2;
-}
-
-.task-form label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 14px;
-}
-
-.task-form button {
-  padding: 10px 15px;
-  background-color: #4a90e2;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.task-form button:hover {
-  background-color: #357bd8;
+  flex-wrap: wrap;
 }
 
 .task-list {
@@ -68,12 +44,15 @@ body {
   border-radius: 10px;
   margin-bottom: 10px;
   gap: 10px;
+  overflow: hidden;
 }
 
 .task-info {
-  flex: 5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex: 5;
+  gap: 4px;
+  min-width: 0;
 }
 
 .task-item input[type="checkbox"] {
@@ -98,19 +77,87 @@ body {
 }
 
 .update-btn {
-  background-color: #f0ad4e;
+  background-color: #a98be3;
   color: white;
-}
-
-.update-btn:hover {
-  background-color: #e69a2e;
 }
 
 .delete-btn {
-  background-color: #e74c3c;
+  background-color: #4b3b61;
   color: white;
 }
 
-.delete-btn:hover {
-  background-color: #c0392b;
+.task-title {
+  font-weight: bold;
+  font-size: 16px;
+  flex: 1px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.task-desc {
+  font-size: 14px;
+  color: #555;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+.add-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  background-color: #311412;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: #f6f2ff;
+  padding: 50px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.modal-box input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.modal-actions button {
+  padding: 6px 12px;
+  background-color: #4b3b61;
+  color: white;
+  border-radius: 6px;
 }

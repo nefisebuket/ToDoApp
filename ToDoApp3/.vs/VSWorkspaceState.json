@@ -7,6 +7,6 @@
     "\\ToDoApp3\\Migrations",
     "\\ToDoApp3\\Models"
   ],
-  "SelectedNode": "\\ToDoApp3\\Controllers",
+  "SelectedNode": "\\ToDoApp3\\DTO\\TaskDTO.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToDoApp3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b098ac433de04692b6848bc236403df83635cde")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToDoApp3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToDoApp3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
